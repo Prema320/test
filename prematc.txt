@@ -1,0 +1,166 @@
+1.method overloading is in the class same name with different parameters is called method overloading.
+
+ex:class Calculator(){
+      int a;
+      float b;
+      
+     float c;
+     static int add(int a,float b){
+
+      System.out.println("invoking add in calculator");
+      c=a+b;
+     System.out.println("c is:"+c);
+    }
+    static int add(float b,int a){
+       c=a+b;
+     System.out.println("c is:"+c);
+
+  }
+
+
+class CalculatorRunner{
+       public static void main(String[] args){
+        Calculator.int(30,25.0f);
+        Calculator.int(10.0f,20);
+
+
+}
+}
+
+
+2.There are four types of variables
+  *local variables
+  *instance variables
+  *static variables 
+  *parameter variables
+
+local variables scope is within the method or a block.
+
+ex:class Laptop{
+
+public static void main(String[] args){
+
+public void run();
+{
+int price=20;//local varialbe
+}
+}
+}
+instance variables scope is outside the method inside the class.
+static variables means declared the variable by using static keyword.
+paramater variables means pass the parameter within the paranthesis.
+
+
+ex:class Grocery{
+public static void main(String[] args){
+   static  String item="fruits";//static var
+       int price=30;//instance var
+     public  void buy(){
+       
+}
+ }
+}
+
+3.Stack memory is used to storing the objects 
+in the stack stack frame is present.one it is executed then comes out of it.
+
+heap memory is used to allocate the memory for the variables.
+
+
+4.class Pen{
+    int price;
+    String color;
+  Pen(){
+   System.out.println("invoking main in pen");
+}
+Pen(int price){
+System.out.println("invoking price in pen");
+}
+Pen(String color,int price){
+System.out.println("invoking string ,price in pen");
+}
+
+
+class PenRunner{
+   public static void main(String[] args)
+{
+Pen pen=new Pen();
+Pen pen1=new Pen(20);
+Pen pen2=new Pen("black",30);
+}
+}
+
+6.class Dress{
+  static String color="black";
+  static int size=32;
+static void wear()
+{
+ System.out.println("invoking main in dress");
+this.color=color;
+this.price=price;
+}
+
+
+class DressRunner{
+public static void main(String[] args)
+{
+ Dress.wear();
+}
+}
+ 
+
+7.class Car{
+    int price;
+    String color;
+Car(){
+System.out.println("invoking car");
+}
+ Car(int price){
+System.out.println("invoking price in car");
+
+}
+Car(int price,String color){
+this(price);
+System.out.println("invoking price,color in car");
+}
+
+
+class CarRunner{
+   public static void main(String[] args){
+Car car=new Car(20,color);
+}
+}
+
+5.class Water{
+     int price=50;
+  public void drink(){
+System.out.println("invoking water");
+
+}
+public void drink(int price){
+
+this.price=price;
+}
+}
+
+class WaterRunner{
+public static void main(String[] args)
+{
+Water water=new Water();
+water.drink;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
